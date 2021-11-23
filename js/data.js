@@ -123,12 +123,12 @@ const icons = [
 let iconContainer = document.querySelector(".container");
 let iconInfo ='';
 icons.forEach((icone) => {
-	// prova
+	console.log(icone.color);
 	iconInfo +=(
 	`<div class="container">
 		<div class="box">
-			<p><i class="${icone.family} ${icone.prefix + icone.name}"></i></p>
-			<p>${icone.name}</p>
+			<p class=""><i class="${icone.color} ${icone.family} ${icone.prefix + icone.name}"></i></p>
+			<p class='txt'>${icone.name}</p>
 		</div>
 	</div>`);
 

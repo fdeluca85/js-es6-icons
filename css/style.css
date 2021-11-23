@@ -22,15 +22,34 @@ body{
     clear: both;
 }
 .box{
-    float: left;
-    border: 1px solid black;
+    /* float: left; */
+    background-color: #fff;
+    /* border: 1px solid black; */
+    border-radius: 20px;
     margin: auto;
     height: 100px;
-    width: 200px;
+    width: 250px;
     text-align: center;
     display: flex;  
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
 }
 
+i{ font-size: 50px;
+    color: black;
+}
+.blue{
+    color: blue;
+}
+.green{
+    color: green;
+}
+.orange{
+    color: orangered;
+}
+.txt{
+    text-transform:uppercase;
+    display: block;
+}
