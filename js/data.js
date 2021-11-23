@@ -123,7 +123,7 @@ const icons = [
 let iconContainer = document.querySelector(".container");
 let iconInfo ='';
 icons.forEach((icone) => {
-	console.log(icone.color);
+	// console.log(icone.color);
 	iconInfo +=(
 	`<div class="container">
 		<div class="box">
@@ -135,3 +135,13 @@ icons.forEach((icone) => {
 });
 
 iconContainer.innerHTML = iconInfo;
+
+
+// filtro icone
+let animal = icons.filter(tipo => tipo.type=='animal')
+let vegetable = icons.filter(tipo => tipo.type=='vegetable')
+let user = icons.filter(tipo => tipo.type=='user')
+
+console.log(animal);
+console.log(vegetable);
+console.log(user);
