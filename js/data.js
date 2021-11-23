@@ -120,10 +120,18 @@ const icons = [
 // BONUS 1- modificare la struttura dati fornita e valorizzare la proprietà "color" in modo dinamico: generare in modo casuale un codice colore, sapendo che la notazione esadecimale è formata dal simbolo "#" seguito da 6 caratteri alfanumerici compresi tra 0 e 9 e A e F. 2- popolare le options della select della milestone 3 dinamicamente.
 
 
-
+let iconContainer = document.querySelector(".container");
+let iconInfo ='';
 icons.forEach((icone) => {
 	// prova
-	console.log(`
-	${icone.name} color ${icone.color}`);
+	iconInfo +=(
+	`<div class="container">
+		<div class="box">
+			<p><i class="${icone.family} ${icone.prefix + icone.name}"></i></p>
+			<p>${icone.name}</p>
+		</div>
+	</div>`);
 
 });
+
+iconContainer.innerHTML = iconInfo;
